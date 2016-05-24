@@ -72,6 +72,6 @@ Vagrant.configure(2) do |config|
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
     sudo apt-get install -y build-essential
-    sudo npm install --unsafe-perm --registry=https://registry.npm.taobao.org -g yo grunt-cli bower gulp webpack webpack-dev-server dev-server-fe
+    sudo npm install --unsafe-perm --registry=https://registry.npm.taobao.org -g grunt-cli gulp webpack dev-server-fe
   SHELL
 end
