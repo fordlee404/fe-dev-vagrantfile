@@ -69,8 +69,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y git apt-utils g++ python ruby-full
-    curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
+    sudo apt-get install -y build-essential
     sudo npm install --unsafe-perm --registry=https://registry.npm.taobao.org -g yo grunt-cli bower gulp webpack webpack-dev-server dev-server-fe
   SHELL
 end
